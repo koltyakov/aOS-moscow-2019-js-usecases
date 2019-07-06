@@ -1,7 +1,7 @@
 {
   "files.exclude": {
     "**/.gitignore": true,
-    "**/.vscode": true,
+    "**/.vscode": false,
     "**/build": true,
     "**/dist": true,
     "**/node_modules": true,

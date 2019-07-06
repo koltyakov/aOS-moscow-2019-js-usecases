@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "aosmoscow-2019-js-api-spfx-client-side-solution",
-    "id": "2d36724f-5652-454f-abaa-000f354e8759",
+    "id": "c1d322d5-03d8-4ebf-9b25-14f4157f9193",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false

@@ -60,8 +60,8 @@ export default class Chart extends React.Component<IProps, IState> {
   }
 
   private getData(): void {
-    this.api.getChartData().then(data => {
-      this.setState(prevState => {
+    this.api.getChartData().then((data) => {
+      this.setState((prevState) => {
         return {
           ...prevState,
           ...(prevState.loadedAt < data.loadedAt ? data : {})

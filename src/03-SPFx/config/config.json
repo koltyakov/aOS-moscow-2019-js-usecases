@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "sp-day-2019-web-part": {
+    "a-os-moscow-vote-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/spDay/WebPart.js",
-          "manifest": "./src/webparts/spDay/WebPart.manifest.json"
+          "entrypoint": "./lib/webparts/aOsMoscowVote/AOsMoscowVoteWebPart.js",
+          "manifest": "./src/webparts/aOsMoscowVote/AOsMoscowVoteWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "aOSMoscowWebPartStrings": "lib/webparts/spDay/loc/{locale}.js"
+    "AOsMoscowVoteWebPartStrings": "lib/webparts/aOsMoscowVote/loc/{locale}.js"
   }
 }

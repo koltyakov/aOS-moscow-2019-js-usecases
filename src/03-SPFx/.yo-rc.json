@@ -1,10 +1,10 @@
 {
   "@microsoft/generator-sharepoint": {
-    "isCreatingSolution": false,
+    "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.7.0",
+    "version": "1.8.2",
     "libraryName": "aosmoscow-2019-js-api-spfx",
-    "libraryId": "2d36724f-5652-454f-abaa-000f354e8759",
+    "libraryId": "c1d322d5-03d8-4ebf-9b25-14f4157f9193",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
