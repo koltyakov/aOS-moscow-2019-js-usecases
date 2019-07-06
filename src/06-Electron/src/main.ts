@@ -10,7 +10,10 @@ app.on('ready', () => {
     center: true,
     darkTheme: true,
     resizable: false,
-    autoHideMenuBar: true
+    autoHideMenuBar: true,
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
   mainWindow.loadFile(path.join(__dirname, '/frontend/index.html'));
   // mainWindow.webContents.openDevTools();

@@ -1,47 +1,25 @@
 import * as webpack from 'webpack';
-import * as UglifyJSPlugin from 'uglifyjs-webpack-plugin';
 import * as path from 'path';
 
 const rules: webpack.Rule[] = [
   {
     test: /\.ts(x?)$/,
     exclude: /(node_modules|dist)/,
-    use: [ 'awesome-typescript-loader' ]
+    use: [ 'ts-loader' ]
   },
   {
     test: /\.css$/,
     use: [
-      {
-        loader: 'style-loader'
-      },
-      {
-        loader: 'css-loader',
-        options: {
-          minimize: true,
-          sourceMap: true
-        }
-      }
+      { loader: 'style-loader' },
+      { loader: 'css-loader' }
     ]
   },
   {
     test: /\.scss$/,
     use: [
-      {
-        loader: 'style-loader'
-      },
-      {
-        loader: 'css-loader',
-        options: {
-          minimize: true,
-          sourceMap: true
-        }
-      },
-      {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: true
-        }
-      }
+      { loader: 'style-loader' },
+      { loader: 'css-loader' },
+      { loader: 'sass-loader' }
     ]
   }
 ];
@@ -58,23 +36,6 @@ const webpackConfig: webpack.Configuration = {
   cache: false,
   devtool: 'source-map',
   module: { rules },
-  optimization: {
-    minimizer: [
-      new UglifyJSPlugin({
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          ecma: 5,
-          compress: true,
-          mangle: true,
-          output: {
-            comments: false
-          }
-        },
-        sourceMap: true
-      })
-    ]
-  },
   resolve: {
     extensions: [ '.ts', '.tsx', '.js', '.jsx' ]
   },

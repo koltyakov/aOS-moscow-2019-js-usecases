@@ -6,10 +6,16 @@
 npm install
 ```
 
+## Build
+
+```bash
+npm run build
+```
+
 ## Auth
 
 ```bash
-npm run auth
+npm run connect
 ```
 
 Provide auth options for SPO site.
