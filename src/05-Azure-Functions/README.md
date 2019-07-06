@@ -1,4 +1,4 @@
-# Workfront Proxy - Azure Functions
+# aOS Moscow 2019 Vote - Azure Functions
 
 ## Project prepare
 
