@@ -16,7 +16,7 @@ export default class Login extends React.Component<IProps> {
       <div className='loginDialog'>
         <div className='tableRow'>
           <div className='tableCell'>
-            <a onClick={this.login}>
+            <a onClick={this.login} href='/#'>
               Login
             </a>
           </div>

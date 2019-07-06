@@ -62,7 +62,7 @@ export default class App extends React.Component<IProps, IState> {
           }}>
             <a
               className='log-out-button'
-              href='#'
+              href='/#'
               onClick={() => {
                 this.authContext.logOut();
                 return false;

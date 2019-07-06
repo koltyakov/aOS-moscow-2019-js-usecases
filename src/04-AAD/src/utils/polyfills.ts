@@ -1,13 +1,12 @@
-'use strict';
+import 'core-js/es/array';
+import 'es6-map/implement';
+import 'whatwg-fetch';
 
 declare const window: Window;
 
 if (typeof Uint8ClampedArray === 'undefined') {
   (window as any).Uint8ClampedArray = () => [];
 }
-
-import 'core-js/es6/array';
-import 'es6-map/implement';
 
 if (!window.location.origin) {
   const { protocol, hostname } = window.location;
@@ -20,8 +19,6 @@ if (!window.location.origin) {
 if (typeof Promise === 'undefined') {
   // tslint:disable-next-line:no-var-requires
   require('promise/lib/rejection-tracking').enable();
+  // tslint:disable-next-line:no-var-requires
   (window as any).Promise = require('promise/lib/es6-extensions.js');
 }
-
-// Fetch polyfill
-import 'whatwg-fetch';

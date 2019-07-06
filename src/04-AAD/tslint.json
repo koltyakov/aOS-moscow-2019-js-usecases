@@ -12,6 +12,8 @@
     "object-literal-sort-keys": false,
     "semicolon": [true, "always", "ignore-interfaces"],
     "space-before-function-paren": false,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "no-useless-escape": false,
+    "no-mixed-operators": false
   }
 }
