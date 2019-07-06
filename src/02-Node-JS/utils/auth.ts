@@ -4,7 +4,11 @@ import NodeFetchClient from 'pnp-auth/lib/NodeFetchClient';
 
 export const auth = async (configPath?: string): Promise<string> => {
 
-  const { siteUrl, authOptions } = await new AuthConfig({ configPath }).getContext();
+  const { siteUrl, authOptions } = await new AuthConfig({
+    configPath,
+    saveConfigOnDisk: false
+  }).getContext();
+
   const pnpNodeFetch = new NodeFetchClient(authOptions, siteUrl);
 
   // Binding authentication context and base URL

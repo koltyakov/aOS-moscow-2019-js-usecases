@@ -24,7 +24,7 @@ import { taxonomy } from '@pnp/sp-taxonomy';
     .select('*,RootFolder/ServerRelativeUrl')
     .filter('Hidden eq false')
     .expand('RootFolder')
-    .get().then(lists => lists.map(list => ({
+    .get().then((lists) => lists.map((list) => ({
       ...list,
       'RootFolder/ServerRelativeUrl': list.RootFolder.ServerRelativeUrl
     })));
