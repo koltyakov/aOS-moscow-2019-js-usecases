@@ -64,7 +64,7 @@ func host start
 npm run build # Build
 func azure login # Login to Azure
 func azure subscriptions list # Show available subscription
-func azure subscriptions set c854bd7e-ad32-41a5-b562-6504d7ebe3c6 # Switch a subscription
+func azure subscriptions set g854bd7e-ad32-41a5-b562-6504d7ebe3c4 # Switch a subscription
 func azure functionapp list # Show available function apps
 cd ./build && func azure functionapp publish aOSMoscow2019 && cd .. # Publish project
 ```
