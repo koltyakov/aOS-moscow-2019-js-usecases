@@ -1,11 +1,11 @@
-declare interface ISPDayWebPartStrings {
+declare interface IaOSMoscowWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   TitleFieldLabel: string;
   RefreshFieldLabel: string;
 }
 
-declare module 'SPDayWebPartStrings' {
-  const strings: ISPDayWebPartStrings;
+declare module 'aOSMoscowWebPartStrings' {
+  const strings: IaOSMoscowWebPartStrings;
   export = strings;
 }

@@ -1,5 +1,5 @@
 {
-  "name": "spday-2018-sample-functions",
+  "name": "aosmoscow-2019-sample-functions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,18 +15,18 @@
   },
   "keywords": [],
   "dependencies": {
-    "@pnp/nodejs": "^1.2.5",
-    "@pnp/pnpjs": "^1.2.5"
+    "@pnp/nodejs": "^1.3.3",
+    "@pnp/pnpjs": "^1.3.3"
   },
   "devDependencies": {
     "azure-functions-pack": "^1.0.0",
-    "commander": "^2.19.0",
-    "concurrently": "^4.0.1",
+    "commander": "^2.20.0",
+    "concurrently": "^4.1.1",
     "copyfiles": "^2.1.0",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.2",
+    "rimraf": "^2.6.3",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.1.6"
+    "typescript": "^3.5.2"
   },
   "author": "",
   "license": "MIT"

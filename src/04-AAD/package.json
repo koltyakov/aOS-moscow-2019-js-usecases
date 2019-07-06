@@ -1,5 +1,5 @@
 {
-  "name": "spday2018-cra2-aad",
+  "name": "aosmoscow2019-cra2-aad",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,25 +16,25 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@pnp/pnpjs": "^1.2.5",
-    "chart.js": "^2.7.3",
-    "core-js": "^2.5.7",
+    "@pnp/pnpjs": "^1.3.3",
+    "chart.js": "^2.8.0",
+    "core-js": "^3.1.4",
     "es6-map": "^0.1.5",
-    "node-sass": "^4.10.0",
-    "react": "^16.6.1",
-    "react-chartjs-2": "^2.7.4",
-    "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1",
-    "typescript": "^3.1.6",
-    "webpack": "4.19.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "typescript": "^3.5.2",
+    "webpack": "4.35.2",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^10.12.5",
-    "@types/react": "^16.7.3",
-    "@types/react-dom": "^16.0.9",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.16.0",
-    "tslint-react": "^3.6.0"
+    "@types/node": "^12.0.12",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0"
   }
 }

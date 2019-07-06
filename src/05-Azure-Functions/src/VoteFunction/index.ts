@@ -15,12 +15,12 @@ module.exports = async (context, req): Promise<void> => {
     return;
   }
 
-  const SPDayVote: number = ({ up: 1, down: -1 })[(req.body.vote || '').toLowerCase()];
-  const SPDayVoteIdentity: string = (req.body.guid || '').toLowerCase();
+  const aOSMoscowVote: number = ({ up: 1, down: -1 })[(req.body.vote || '').toLowerCase()];
+  const aOSMoscowVoteIdentity: string = (req.body.guid || '').toLowerCase();
 
   const guidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
-  if (typeof SPDayVote === 'undefined' || SPDayVoteIdentity.match(guidPattern) === null) {
+  if (typeof aOSMoscowVote === 'undefined' || aOSMoscowVoteIdentity.match(guidPattern) === null) {
     context.res = {
       status: 400,
       body: 'Invalid request object'
@@ -40,11 +40,11 @@ module.exports = async (context, req): Promise<void> => {
 
   try {
 
-    const items = await list.items.select('Id').filter(`SPDayVoteIdentity eq '${SPDayVoteIdentity}'`).get();
+    const items = await list.items.select('Id').filter(`aOSMoscowVoteIdentity eq '${aOSMoscowVoteIdentity}'`).get();
     if (items.length === 0) {
-      await list.items.add({ SPDayVote, SPDayVoteIdentity });
+      await list.items.add({ aOSMoscowVote, aOSMoscowVoteIdentity });
     } else {
-      await list.items.getById(items[0].Id).update({ SPDayVote });
+      await list.items.getById(items[0].Id).update({ aOSMoscowVote });
     }
 
     context.res = {

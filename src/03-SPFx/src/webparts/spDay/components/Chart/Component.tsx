@@ -33,7 +33,7 @@ export default class Chart extends React.Component<IProps, IState> {
       labels: [ 'Up', 'Down' ]
     };
     return (
-      <div className={styles.spDay2018}>
+      <div className={styles.spDay2019}>
         {this.props.title && <h2 className={styles.title}>{this.props.title}</h2>}
         <Doughnut data={chartData} />
       </div>

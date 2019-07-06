@@ -66,10 +66,10 @@ func azure login # Login to Azure
 func azure subscriptions list # Show available subscription
 func azure subscriptions set c854bd7e-ad32-41a5-b562-6504d7ebe3c6 # Switch a subscription
 func azure functionapp list # Show available function apps
-cd ./build && func azure functionapp publish SPDay2018 && cd .. # Publish project
+cd ./build && func azure functionapp publish aOSMoscow2019 && cd .. # Publish project
 ```
 
-`SPDay2018` should be changed to actual Functions App name.
+`aOSMoscow2019` should be changed to actual Functions App name.
 
 ## Configuring Azure Functions App
 

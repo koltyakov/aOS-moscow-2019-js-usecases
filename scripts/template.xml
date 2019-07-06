@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dev.office.com/PnP/2018/05/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2018-05.xsd">
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/05/ProvisioningSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/05/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2019-05.xsd">
   <pnp:Preferences Generator="Manual" />
-  <pnp:Templates ID="SPDAY-TEMPLATE">
-    <pnp:ProvisioningTemplate ID="SPDayVotes" Version="1">
+  <pnp:Templates ID="AOS-MOSCOW-TEMPLATE">
+    <pnp:ProvisioningTemplate ID="aOSMoscowVotes" Version="1">
       <pnp:SiteFields>
-        <Field ID="{31d87655-298e-43e1-8819-c9086afb88c9}" Name="SPDayVote" DisplayName="Vote Value" Group="SPDay" Decimals="0" Type="Number" />
-        <Field ID="{cee241d1-9391-4274-8789-da83129f7373}" Name="SPDayVoteIdentity" DisplayName="Vote ID" Group="SPDay" Type="Text" Indexed="TRUE" AllowDuplicateValues="TRUE" />
-        <Field ID="{f5549ebf-0e64-4930-bf70-496ea55a8e70}" Name="SPDayVoteMeta" DisplayName="Vote Meta" Group="SPDay" Type="Note" NumLines="6" RichText="FALSE" RichTextMode="Compatible" />
+        <Field ID="{8ac32fee-8887-475b-b299-179dc15bd9c8}" Name="aOSMoscowVote" DisplayName="Vote Value" Group="aOSMoscow" Decimals="0" Type="Number" />
+        <Field ID="{be28fa73-3269-4fed-96d3-fc569086ce52}" Name="aOSMoscowVoteIdentity" DisplayName="Vote ID" Group="aOSMoscow" Type="Text" Indexed="TRUE" AllowDuplicateValues="TRUE" />
+        <Field ID="{921324e6-9fcd-4e74-8e1e-617996f89ce0}" Name="aOSMoscowVoteMeta" DisplayName="Vote Meta" Group="aOSMoscow" Type="Note" NumLines="6" RichText="FALSE" RichTextMode="Compatible" />
       </pnp:SiteFields>
       <pnp:ContentTypes>
-        <pnp:ContentType ID="0x0100E8D46DEFF25549E9B3B57B7C807C2ADE" Name="SPDay Vote" Group="SPDay">
+        <pnp:ContentType ID="0x0100E8D46DEFF25549E9B3B57B7C807C2ADE" Name="aOSMoscow Vote" Group="aOSMoscow">
           <pnp:FieldRefs>
             <pnp:FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="false" />
-            <pnp:FieldRef ID="{31d87655-298e-43e1-8819-c9086afb88c9}" Name="SPDayVote" Required="true" />
-            <pnp:FieldRef ID="{cee241d1-9391-4274-8789-da83129f7373}" Name="SPDayVoteIdentity" Required="true" />
-            <pnp:FieldRef ID="{f5549ebf-0e64-4930-bf70-496ea55a8e70}" Name="SPDayVoteMeta" Required="false" />
+            <pnp:FieldRef ID="{8ac32fee-8887-475b-b299-179dc15bd9c8}" Name="aOSMoscowVote" Required="true" />
+            <pnp:FieldRef ID="{be28fa73-3269-4fed-96d3-fc569086ce52}" Name="aOSMoscowVoteIdentity" Required="true" />
+            <pnp:FieldRef ID="{921324e6-9fcd-4e74-8e1e-617996f89ce0}" Name="aOSMoscowVoteMeta" Required="false" />
           </pnp:FieldRefs>
         </pnp:ContentType>
       </pnp:ContentTypes>
@@ -33,17 +33,17 @@
               </Query>
               <ViewFields>
                 <pnp:FieldRef Name="Created" />
-                <pnp:FieldRef Name="SPDayVote" />
-                <pnp:FieldRef Name="SPDayVoteIdentity" />
+                <pnp:FieldRef Name="aOSMoscowVote" />
+                <pnp:FieldRef Name="aOSMoscowVoteIdentity" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
             </View>
           </pnp:Views>
           <pnp:FieldRefs>
             <pnp:FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="false" />
-            <pnp:FieldRef ID="{31d87655-298e-43e1-8819-c9086afb88c9}" Name="SPDayVote" Required="true" />
-            <pnp:FieldRef ID="{cee241d1-9391-4274-8789-da83129f7373}" Name="SPDayVoteIdentity" Required="true" />
-            <pnp:FieldRef ID="{f5549ebf-0e64-4930-bf70-496ea55a8e70}" Name="SPDayVoteMeta" Required="false" />
+            <pnp:FieldRef ID="{8ac32fee-8887-475b-b299-179dc15bd9c8}" Name="aOSMoscowVote" Required="true" />
+            <pnp:FieldRef ID="{be28fa73-3269-4fed-96d3-fc569086ce52}" Name="aOSMoscowVoteIdentity" Required="true" />
+            <pnp:FieldRef ID="{921324e6-9fcd-4e74-8e1e-617996f89ce0}" Name="aOSMoscowVoteMeta" Required="false" />
           </pnp:FieldRefs>
         </pnp:ListInstance>
       </pnp:Lists>

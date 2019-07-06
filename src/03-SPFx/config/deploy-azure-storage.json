@@ -2,6 +2,6 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/deploy-azure-storage.schema.json",
   "workingDir": "./temp/deploy/",
   "account": "<!-- STORAGE ACCOUNT NAME -->",
-  "container": "spday-2018-js-api-spfx",
+  "container": "aosmoscow-2019-js-api-spfx",
   "accessKey": "<!-- ACCESS KEY -->"
 }

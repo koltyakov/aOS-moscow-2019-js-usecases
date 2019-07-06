@@ -22,7 +22,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className='app'>
         <div className='app-container'>
-          <p>SPDay 2018 - CRA2 + AAD sample</p>
+          <p>aOSMoscow 2019 - CRA2 + AAD sample</p>
           {this.state.loading && !this.state.popUpDisabledUrl && <Loading />}
           {this.state.loading && this.state.popUpDisabledUrl && (
             <Login

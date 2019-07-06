@@ -18,15 +18,15 @@ export class ChartAPI {
         <View>
           <Query>
             <GroupBy Collapse="TRUE">
-              <FieldRef Name="SPDayVote" />
+              <FieldRef Name="aOSMoscowVote" />
             </GroupBy>
           </Query>
         </View>
       `
     }).then(({ Row: data }) => {
       const votes = data.reduce((r: any, g: any) => {
-        const vote = parseInt(g.SPDayVote, 10);
-        const count = parseInt(g['SPDayVote.COUNT.group'], 10);
+        const vote = parseInt(g.aOSMoscowVote, 10);
+        const count = parseInt(g['aOSMoscowVote.COUNT.group'], 10);
         if (vote > 0) {
           r.up += vote * count;
         }

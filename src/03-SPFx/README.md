@@ -1,4 +1,4 @@
-## spday-2018-js-api-spfx
+## aosmoscow-2019-js-api-spfx
 
 This is where you include your WebPart documentation.
 

@@ -6,7 +6,7 @@ import {
   PropertyPaneSlider, PropertyPaneTextField } from '@microsoft/sp-webpart-base';
 import { sp } from '@pnp/sp';
 
-import * as strings from 'SPDayWebPartStrings';
+import * as strings from 'aOSMoscowWebPartStrings';
 import Chart, { IProps as IComponentProps } from './components/Chart';
 
 export interface IWebPartProps {
@@ -14,7 +14,7 @@ export interface IWebPartProps {
   refreshInSeconds: number;
 }
 
-export default class SPDayWebPart extends BaseClientSideWebPart<IWebPartProps> {
+export default class aOSMoscowWebPart extends BaseClientSideWebPart<IWebPartProps> {
 
   public render(): void {
     const element: React.ReactElement<IComponentProps> = React.createElement(

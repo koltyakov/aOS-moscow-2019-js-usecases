@@ -1,4 +1,4 @@
-# SharePoint Day 2018 - SharePoint JS API Consumption Examples
+# SharePoint Day 2019 - SharePoint JS API Consumption Examples
 
 ## Configuration
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
   "id": "3ae97d0f-8d1a-443d-9d32-170b852c1963",
-  "alias": "SPDayWebPart",
+  "alias": "aOSMoscowWebPart",
   "componentType": "WebPart",
   "version": "*",
   "manifestVersion": 2,
@@ -9,11 +9,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
     "group": { "default": "Other" },
-    "title": { "default": "SPDay2018" },
-    "description": { "default": "SP Day 2018 WebPart" },
+    "title": { "default": "aOSMoscow2019" },
+    "description": { "default": "SP Day 2019 WebPart" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "webpartTitle": "SPDay 2018 - Vote Sample",
+      "webpartTitle": "aOSMoscow 2019 - Vote Sample",
       "refreshInSeconds": 30
     }
   }]
