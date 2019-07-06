@@ -11,6 +11,7 @@ const VoteButton = (props: IVoteButtonProps) => {
     <img
       className={`vote-button ${props.active ? '' : 'isDisabled'} ${props.selected ? 'isSelected' : '' }`}
       src={({ up, down })[props.type]}
+      alt={''}
       onClick={() => {
         if (props.active && props.onclick && typeof props.onclick === 'function') {
           props.onclick();
