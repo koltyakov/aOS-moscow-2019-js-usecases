@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "connect": "node ./scripts/connect",
+    "pnp:install": "powershell ./scripts/install.ps1",
     "pnp:deploy": "powershell ./scripts/deploy.ps1"
   },
   "repository": {
