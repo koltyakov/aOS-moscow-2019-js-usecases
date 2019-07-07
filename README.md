@@ -1,4 +1,4 @@
-# SharePoint Day 2019 - SharePoint JS API Consumption Examples
+# aOS Moscow 2019 - SharePoint JS API Consumption Examples
 
 ## Configuration
 
