@@ -8,7 +8,7 @@ const { ChartAPI } = remote.require('./backend/operations');
 
 import './styles.scss';
 const styles = {
-  spDay2019: 'spDay2019',
+  aOSMoscow2019: 'aOSMoscow2019',
   title: 'title'
 };
 
@@ -39,7 +39,7 @@ export default class Chart extends React.Component<IProps, IState> {
       labels: [ 'Up', 'Down' ]
     };
     return (
-      <div className={styles.spDay2019}>
+      <div className={styles.aOSMoscow2019}>
         {this.props.title && <h2 className={styles.title}>{this.props.title}</h2>}
         <Doughnut data={chartData} />
       </div>

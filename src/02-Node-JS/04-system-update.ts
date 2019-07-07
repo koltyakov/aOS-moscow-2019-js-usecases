@@ -34,5 +34,5 @@ import { enviromnets } from '../../scripts/env';
 const getRecentItems = (list: List): Promise<{ Id: number; Title: string; [key: string]: any }[]> => {
   return list.items
     .select('Id,Title,EditorId,Modified,OData__UIVersionString')
-    .orderBy('Id', false).top(5).get();
+    .orderBy('Id', false).top(2).get();
 };
